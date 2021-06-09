@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f4fa;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.search-form input {
+  height: 30px;
+  width: 70%;
+  margin-right: 10px;
+}
+.search-form button {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: 0;
+  width: 100px;
+}
+.search-form button:hover {
+  background-color: #188ce8;
+}
+
+.image-section {
+  width: 1200px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.photo-card {
+  max-width: calc ((100% - 30px) / 4);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.photo-card img {
+  display: block;
+  width: 290px;
+}
+
+.list-item:not(:nth-child(4n)) {
+  margin-right: 10px;
+}
+.list-item:not(:nth-child(-n + 4)) {
+  margin-top: 20px;
+}
+.list-item {
+  border: 1px solid #dbdbdb;
+}
+.list-item:hover {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  cursor: zoom-in;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+}
+.stats-item {
+  display: flex;
+  align-items: center;
+  color: #757575;
+}
+.stats-item:not(:last-child) {
+  margin-right: 7px;
+}
+.material-icons {
+  color: #2196f3;
+  margin-right: 2px;
+}
